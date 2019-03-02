@@ -1,0 +1,14 @@
+{
+	"APPLICATIONS" : [
+		{ 
+			"name" : "example app",
+			"webLink" : "https://www.myapp.com",
+			"preview" : "/preview/mypreview.png",
+			"description": "my really cool app",
+			"states": [{
+				"status" : "Online",
+				"url" : "http://www.myapp.com"
+			}]
+		}
+	]
+}

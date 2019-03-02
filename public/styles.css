@@ -1,0 +1,60 @@
+body {
+	font-family: 'ZCOOL QingKe HuangYou', cursive;
+	color: #333;
+}
+
+a {
+  color:inherit;
+  text-decoration: none;
+}
+
+.site-window {
+	height: 180px;
+	width: 320px;
+	display: inline-block;
+	padding: 5px;
+	margin: 30px;
+}
+
+.site-title h2 {
+	text-decoration: underline;
+	font-size: 2em;
+	margin: 5px 0 7px 0;
+}
+
+.site-metadata {
+	padding: 3px 0;
+}
+
+.site-weblink {
+	font-size: 0.8em;
+	font-family: 'Courier New';
+	opacity: 0.5;
+	padding: 3px 0;
+}
+
+.site-window:hover .site-weblink {
+	opacity: 1;
+}
+
+.site-description {
+	font-size: 0.8em;
+	opacity: 0.5;
+}
+
+.site-preview > img {
+	width: 100%;
+	margin: 7px 0;
+	border-radius: 3px;
+	border: 1px solid #666;
+	box-shadow: 0px 0px 3px rgba(96, 96, 96, 0.5);
+}
+
+.site-online {
+	color: lime;
+}
+
+.site-offline {
+	color: red;
+	font-weight: 600;
+}
