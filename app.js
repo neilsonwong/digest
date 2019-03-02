@@ -40,16 +40,15 @@ async function queryApplication(application){
 
 async function processState(stateRequest){
   //only handle url pings atm
-  console.log('attempting to ping ' + stateRequest.url);
   let status = {};
   try {
-    let response = await request.get({ 'uri': stateRequest.url, 'timeout': 2000});
+    let response = await request.get({ 'uri': stateRequest.url, 'timeout': config.urlTimeout});
     status[stateRequest.status] = true; 
     console.log("true");
   }
   catch (e) {
     status[stateRequest.status] = false; 
-    console.log("false");
+    console.log(`attempt to ping ${stateRequest.url} failed`);
     console.log(e);
   }
   console.log(status);

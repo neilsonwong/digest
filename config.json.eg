@@ -10,5 +10,6 @@
 				"url" : "http://www.myapp.com"
 			}]
 		}
-	]
+	],
+	"urlTimeout" : 3000
 }
